@@ -3,7 +3,6 @@
 namespace SimpleMvc\DI;
 
 use SimpleMvc\Di;
-use SimpleMvc\Http\Response\Cookies;
 use SimpleMvc\Http\Request;
 use SimpleMvc\Http\Response;
 
@@ -94,6 +93,7 @@ class DefaultFactory extends Di
     {
         $this->setService('request', new Request());
         $this->setService('response', new Response());
-        $this->setService('cookies', new Cookies());
+        $this->setService('cookies', new Response\Cookies());
+        $this->setService('session', new Response\Session());
     }
 }
