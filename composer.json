@@ -1,0 +1,18 @@
+{
+    "name": "depx/mvc",
+    "description": "A simple PHP MVC framework.",
+    "authors": [
+        {
+            "name": "DepX",
+            "email": "info@depx.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "SimpleMvc": "src/"
+        }
+    }
+}
